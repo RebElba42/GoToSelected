@@ -1,0 +1,7 @@
+<!ENTITY showdetails.title "SendSelBySMS Status">
+<!ENTITY showdetails.StatusMessage "Status Message:">
+<!ENTITY showdetails.SMSText "SMS Text:">
+<!ENTITY showdetails.Recipient "Recipient:">
+<!ENTITY pane1.title "Summary">
+
+

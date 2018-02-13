@@ -1,0 +1,7 @@
+content	sendsms	content/
+locale	sendsms	en-US	locale/en-US/
+locale	sendsms	de-DE	locale/de-DE/
+skin	  sendsms	classic/1.0	skin/
+overlay	chrome://browser/content/browser.xul	chrome://sendsms/content/firefoxOverlay.xul
+
+overlay chrome:// chrome://ension/content/status.xul 
