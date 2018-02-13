@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://sendsms/locale/statusdetails.dtd">
+<window id="showdetails" title="&showdetails.title;" orient="horizontal"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script src="showdetails.js"/>
+  	
+  	<vbox flex="3">
+  		<groupbox>
+  		<caption label="SMS Data"/>
+  			<vbox>
+    			<label id="lblRecipient" value="&showdetails.Recipient;"/>
+    			<spacer flex="1"/>
+    			<textbox id="txtRecipient" type="autocomplete"
+				    autocompletesearch="form-history"
+				    autocompletesearchparam="Search-History-Rec"
+				    ontextentered="Search_Change(param);"
+				    enablehistory="true"
+				    
+				 />
+				<spacer flex="1" />
+				<label id="lblSMSTextspacer" value=""/>
+				<label id="lblSMSText" value="&showdetails.SMSText;"/>
+				<spacer flex="1" style="max-height: 30px;"/>
+    			<textbox id="txtSMSText" type="string" multiline="true" rows="5" cols="40"	/>
+    			<spacer flex="1"/>
+				<hbox>
+					<label id="lblStatusText" value="&showdetails.StatusMessage;"/>
+	    			<spacer flex="1"/>
+					<label id="lblStatus" value=""/>
+	    			<spacer flex="1"/>
+					<image id="loaderimage" src="chrome://sendsms/content/images/loader.gif" width="16" height="16" hidden="true" />
+				</hbox>
+				<label id="lblResult" value="Server Result:"/>
+    			<textbox id="txtResult" type="string" multiline="true" rows="5" cols="40"	/>
+    		</vbox>
+		</groupbox>
+  	</vbox>
+  	<spacer flex="1"/>
+  	<vbox flex="1" align="start">
+  		<spacer flex="1"/>
+	    <button label="Send" oncommand="doOK();" default="true"/>
+	    <button label="Cancel" oncommand="doCancel();"/>
+	    <spacer flex="1" style="max-width: 3px;" />
+  	</vbox>
+</window>

@@ -1,0 +1,10 @@
+<!ENTITY prefwindow.title "SendSelBySMS Einstellungen">
+<!ENTITY pane1.title "Verhalten">
+<!ENTITY checkboolpref.label "Setze den aktuellen Focus auf das neue Tab?">
+<!ENTITY checkboolpref.accesskey "F">
+<!ENTITY stringpref.label "SMS Server URL">
+<!ENTITY stringpref.accesskey "S">
+<!ENTITY stringuser.label "SMS Username">
+<!ENTITY stringpass.label "SMS Passwort">
+<!ENTITY stringfrom.label "SMS Von">
+<!ENTITY stringdest.label "SMS Zielnr">

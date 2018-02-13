@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:localized>
+      <Description em:locale="en-US">
+        <em:name>SendSelBySMS</em:name>
+        <em:description>SendSelBySMS sends selected Text via SMS Server configured in options dialog. Rightclick after Text was selected...</em:description>
+        <em:creator>relbarnoussi@me.com</em:creator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description em:locale="de-DE">
+        <em:name>SendSelBySMS</em:name>
+        <em:description>SendSelBySMS sendet den markierten Text via SMS Server konfigurierbar in dein Einstellungen. Rechte Maustaste nach Auswahl des Textes im aktuellen Browserfenster...</em:description>
+        <em:creator>relbarnoussi@me.com</em:creator>
+      </Description>
+    </em:localized>
+    <em:id>{ff1b2958-affb-0b23-c74a-dbb30ea93bcd}</em:id>
+    <em:version>1.0.1</em:version>
+    <em:iconURL>chrome://sendsms/content/images/sendsms_32.png</em:iconURL>
+    <em:optionsURL>chrome://sendsms/content/options.xul</em:optionsURL>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- firefox -->
+        <em:minVersion>1.5</em:minVersion>
+        <em:maxVersion>3.6.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  <em:name>relba</em:name><em:creator>relbarnoussi@me.com</em:creator><em:homepageURL/><em:aboutURL/><em:updateURL/><em:updateKey/><em:hidden/><em:description/></Description>
+</RDF>
