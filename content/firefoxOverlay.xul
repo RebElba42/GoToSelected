@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://sendsms/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://sendsms/locale/sendsms.dtd">
+<overlay id="sendsms-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="sendsms-strings" src="chrome://sendsms/locale/sendsms.properties"/>
+  </stringbundleset>
+
+  <popup id="contentAreaContextMenu">
+    <menuitem class="menuitem-iconic" 
+              id="context-sendsms" 
+              label="&sendsmsContext.label;"
+              accesskey="&sendsmsContext.accesskey;"
+              oncommand="sendsms.onMenuItemCommand(event);" 
+              image="chrome://sendsms/content/images/sendsms_16.png"/>
+              
+  </popup>
+</overlay>
